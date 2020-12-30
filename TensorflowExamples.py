@@ -114,7 +114,7 @@ def input_parser(img_path, label):
     #one_hot = tf.one_hot(label, NUM_CLASSES)
     one_hot=label
     # read the img from file
-    img_file = tf.read_file(img_path)
+    c
     img_decoded = tf.image.decode_image(img_file, channels=3)
     print(tf.rank(img_decoded))
     
